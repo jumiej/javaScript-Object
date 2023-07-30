@@ -2,8 +2,8 @@
 
 const person ={ 
     name: 'John',
-     age:20,
-     color:"white"
+     age:[],
+     color:{}
 
  };
  ///Adding New Properties///
@@ -118,13 +118,20 @@ let nickName = "";
 
 console.log( firstName || lastName || nickName || "Anonymous"); // SuperCoder
 
-let hour = 9;
+
 
 const checkOfficeHour = () => {
-    if(hour > 18 || hour < 12);
+    let hour = 9;
+    if(false)  {
+        return `it is office hour which ${hour}`
+
+    } else {
+        return "We are close for the day"
+    }
 }
 
-console.log("The office is closed")
+console.log("mhhfgfv" , checkOfficeHour())
+
 
 let  hours = 12;
 let isWeekend = false;
@@ -163,3 +170,15 @@ console.log(!!"I am home") // true
 
 console.log(!null); // true
 console.log(!!null); // false
+
+
+
+
+const person5 = {
+    name: "John",
+    age: 20,
+    color: "white",
+  };
+  ///Adding New Properties///
+  person5.Nationality = "canada";
+  console.log(person5)
